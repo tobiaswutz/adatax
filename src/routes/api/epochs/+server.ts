@@ -23,7 +23,7 @@ export async function GET({ url }: { url: URL }) {
 
   
 
-	const previousEpochs: EpochData[] = await fetch(`https://cardano-mainnet.blockfrost.io/api/v0/epochs/${latest}/previous?count=100&page=${page}`, {
+	const previousEpochs: EpochData[] = await fetch(`https://cardano-mainnet.blockfrost.io/api/v0/epochs/${latest}/previous?count=10&page=${page}`, {
 		headers: {
 			project_id: project_id
 		}
